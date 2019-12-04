@@ -1,0 +1,182 @@
+@mixin  size($W, $H) {
+  width: $W;
+  height: $H;
+}
+@mixin  bg($w, $h, $url) {
+  @include size($w, $h);
+  background: url($url);
+  background-size: $w $h;
+}
+@mixin pbsa($t, $l) {
+  position: absolute;
+  top: $t;
+  left: $l;
+}
+@mixin fontColor($font, $color) {
+  font-size: $font;
+  color: $color;
+}
+
+.chainsolution {
+  // width: 9.6rem;
+  header {
+    height: 0.355rem;
+    background: rgb(24, 29, 40);
+    display: flex;
+    align-items: center;
+    font-size: .12rem;
+    color: #ffffff;
+    .logo {
+      margin-left: 1.89rem;
+      @include bg(.84rem, .133rem,'../assets/logo.png');
+    }
+    .navs {
+      height: 0.355rem;
+      line-height: 0.355rem;
+      li {
+        position: relative;
+        display: inline-block;
+        margin-left: .35rem;
+        cursor: pointer;
+      }
+      .active {
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: .02rem;
+          @include size(100%, .01rem);
+          background: #FF9929;
+        }
+      }
+    }
+  }
+  .page1 {
+    @include bg(9.6rem, 5.045rem, '../assets/p1.png');
+    position: relative;
+    .page1logo {
+      @include bg(1.685rem, .41rem, '../assets/logo2.png');
+      @include pbsa(.385rem, 3.96rem);
+    }
+    .page1desc {
+      // margin-top: 2.08rem;
+      padding-top: 2.08rem;
+      text-align: center;
+      .p1h1 {
+        @include fontColor(.32rem, #fff);
+      }
+      .p1h2 {
+        @include fontColor(.12rem, #fff);
+        opacity: .5;
+        margin-top: .05rem;
+      }
+    }
+    .p1common {
+      @include fontColor(.12rem, #fff);
+      opacity: .5;
+    }
+    .p1t1 {
+      @include pbsa(.915rem, 6.205rem);
+    }
+    .p1t2 {
+      @include pbsa(2.605rem, 1.945rem);
+    }
+    .p1t3 {
+      @include pbsa(4.14rem, 5.625rem);
+    }
+  }
+  .page2 {
+    @include bg(9.6rem, 5.4rem, '../assets/p2.png');
+    h2 {
+      text-align: center;
+      @include fontColor(.24rem, #FFF);
+      padding-top: 1.77rem;
+    }
+    .p2c {
+      @include size(8.04rem, .32rem);
+      @include fontColor(.12rem, #FFF);
+      margin: .32rem auto .61rem auto;
+    }
+    .p2btn {
+      @include size(1.36rem, .36rem);
+      text-align: center;
+      line-height: .36rem;
+      @include fontColor(.12rem, #FFF);
+      margin: 0 auto;
+      border: .005rem solid #fff;
+    }
+  }
+  .page3 {
+    @include bg(9.6rem, 5.4rem, '../assets/p3.png');
+    position: relative;
+    h2 {
+      padding-top: .45rem;
+      text-align: center;
+      @include fontColor(.24rem, #FFF);
+    }
+    .sence {
+      h3 {
+        color: #FFF;
+        font-size: .18rem;
+      }
+      p {
+        @include size(1.36rem, .36rem);
+        margin-top: .2rem;
+        font-size: .09rem;
+        color: rgba($color: #fff, $alpha: .5);
+      }
+    }
+    .sence0 {
+      @include pbsa(1.4rem, 1.54rem);
+    }
+    .sence1 {
+      @include pbsa(2.65rem, .58rem);
+    }
+    .sence2 {
+      @include pbsa(4.05rem, 2.04rem);
+    }
+    .sence3 {
+      width: 1.88rem;
+      text-align: right;
+      @include pbsa(1rem, 6.4rem);
+      p {
+        @include size(1.88rem, .35rem)
+      }
+    }
+    .sence4 {
+      width: 2.1rem;
+      @include pbsa(2.14rem, 6.9rem);
+      text-align: right;
+      p {
+        @include size(2.1rem, .61rem)
+      }
+    }
+    .sence5 {
+      width: 1.88rem;
+      text-align: right;
+      @include pbsa(3.6rem, 6.47rem);
+      p {
+        @include size(1.88rem, .48rem)
+      }
+    }
+  }
+  .page4 {
+    @include bg(9.6rem, 5.4rem, '../assets/ys.png');
+    color: #fff;
+    text-align: center;
+    h2 {
+      padding-top: 1.45rem;
+      font-size: .24rem;
+      margin-bottom: .3rem;
+    }
+    p {
+      font-size: .12rem;
+      &:last-of-type {
+        margin-top: .05rem;
+      }
+    }
+  }
+  footer {
+    @include size(9.6rem, 3.17rem)
+  }
+}
