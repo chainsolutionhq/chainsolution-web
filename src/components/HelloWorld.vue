@@ -5,12 +5,12 @@
       <div class="logo"></div>
       <ul class="navs">
         <li v-for="(nav, key) in navlists" :key="key" :class="key == activce ? 'active': ''" @click="activce=key">
-          {{ nav }}
+          <a :href="'#p'+key"> {{ nav }} </a>
         </li>
       </ul>
     </header>
     <!-- page1 -->
-    <div class="page1">
+    <div class="page1" id="p0">
       <!-- {{ msg }} -->
       <div class="page1logo"></div>
       <div class="page1desc">
@@ -22,25 +22,28 @@
       <div class="p1common p1t3">数字版权</div>
     </div>
     <!-- page2 -->
-    <div class="page2">
+    <div class="page2" id="p1">
       <h2>区块链到卡一站式解决方案</h2>
       <p class="p2c">企业和组织是建立在信任的基础之上。有了信任，就会相信企业间的交易是合法的，企业生产的产品不是伪造的，企业就如显现出来的这般诚实可靠令人信赖。链卡科技将这种信任提升了一个全新的水平。我们的芯片供应链技术创造了一种前所未有的数字信任形式。</p>
       <div class="p2btn">联系我们</div>
     </div>
     <!-- page3 -->
-    <div class="page3">
+    <div class="page3" id="p2">
       <h2>6大应用场景</h2>
       <div class="" v-for="(sence, key) in scenes" :key="key" :class="'sence sence'+key">
         <h3>{{ sence.name }}</h3>
         <p>{{ sence.content }}</p>
       </div>
     </div>
-    <div class="page4">
+    <div class="page4" id="p3">
       <h2>链卡团队的优势</h2>
       <p>从芯片到链，代码全部开源，代码灵活度高且可控性强，根据需求定制化。</p>
       <p>行业顶级专家顾问团队，从方案到项目落地全程参与，为企业赋能，助理企业解决行业区块链从升级到应用落地遇到技术问题。</p>
     </div>
-    <footer></footer>
+    <footer id="p4">
+      <div class="p4logo"></div>
+      
+    </footer>
   </div>
 </template>
 

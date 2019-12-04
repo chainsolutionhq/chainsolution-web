@@ -38,6 +38,11 @@
         display: inline-block;
         margin-left: .35rem;
         cursor: pointer;
+        a {
+          text-decoration: none;
+          outline: none;
+          color: white;
+        }
       }
       .active {
         &::after {
