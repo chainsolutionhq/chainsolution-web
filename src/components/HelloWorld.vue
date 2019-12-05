@@ -42,7 +42,17 @@
     </div>
     <footer id="p4">
       <div class="p4logo"></div>
-      
+      <div class="p4contect">
+        <div class="desc"><span>帮助与支持</span><span>联系我们</span></div>
+        <div class="desc"><span>Q&A</span><span>Email:hjaks@163.com</span></div>
+        <div class="line"></div>
+      </div>
+      <div class="p4logo2"></div>
+      <div class="copyrihts">Copyright 2019 XXXXXXX 版权所有 XXXXXX</div>
+      <div class="qrcode">
+        <img src="../assets/qrcode.png" alt="...">
+        <p>扫码关注链卡科技了解最新动态</p>
+      </div>
     </footer>
   </div>
 </template>

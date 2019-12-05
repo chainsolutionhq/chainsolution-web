@@ -182,6 +182,57 @@
     }
   }
   footer {
-    @include size(9.6rem, 3.17rem)
+    position: relative;
+    @include size(9.6rem, 3.17rem);
+    .p4logo {
+      position: relative;
+      top: .5rem;
+      @include bg(1.9rem, .12rem, '../assets/footerlogo1.png');
+      // margin-top: .5rem;
+      margin-left: .88rem;
+    }
+    .p4contect {
+      margin-top: .94rem;
+      margin-left: .88rem;
+      @include fontColor(.12rem, #000);
+      .desc {
+        margin-top: .15rem;
+        span {
+          &:last-of-type {
+            margin-left: 1.09rem;
+          }
+        }
+      }
+      .line {
+        margin-top: .3rem;
+        @include size(3.85rem, .01rem);
+        background: #000;
+      }
+    }
+    .p4logo2 {
+      margin-top: .41rem;
+      margin-left: .88rem;
+      @include bg(1.68rem, .26rem, '../assets/footerlogo2.png');
+    }
+    .copyrihts {
+      margin-top: .15rem;
+      margin-left: .88rem;
+      @include fontColor(.12rem, #000);
+    }
+    .qrcode {
+      @include pbsa(1.5rem, 8.47rem);
+      font-size: 0;
+      img {
+        @include size(.725rem, .725rem);
+        border: 1px solid black;
+      }
+      p {
+        margin-top: .11rem;
+        margin-left: -.09rem;
+        @include fontColor(.1rem, #000);
+        width: .94rem;
+        text-align: center;
+      }
+    }
   }
 }
