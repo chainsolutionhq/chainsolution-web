@@ -61,7 +61,7 @@
 import './index.scss'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Website',
   data() {
     return {
       navlists: ['首页', '应用场景', '解决方案', '优势', '公司介绍'],
