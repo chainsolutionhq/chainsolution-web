@@ -104,6 +104,8 @@
     }
     .p2btn {
       @include size(1.36rem, .36rem);
+      display: block;
+      text-decoration: none;
       text-align: center;
       line-height: .36rem;
       @include fontColor(.12rem, #FFF);

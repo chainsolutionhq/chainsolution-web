@@ -25,7 +25,8 @@
     <div class="page2" id="p1">
       <h2>区块链到卡一站式解决方案</h2>
       <p class="p2c">企业和组织是建立在信任的基础之上。有了信任，就会相信企业间的交易是合法的，企业生产的产品不是伪造的，企业就如显现出来的这般诚实可靠令人信赖。链卡科技将这种信任提升了一个全新的水平。我们的芯片供应链技术创造了一种前所未有的数字信任形式。</p>
-      <div class="p2btn">联系我们</div>
+      <!-- <div class="p2btn"></div> -->
+      <a href="mailto:hjaks@163.com?subject=联系我们&body=欢迎您提出意见建议" class="p2btn">联系我们</a>
     </div>
     <!-- page3 -->
     <div class="page3" id="p2">
