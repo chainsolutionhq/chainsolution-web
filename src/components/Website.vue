@@ -10,7 +10,7 @@
       </ul>
     </header>
     <!-- page1 -->
-    <div class="page1" id="p0">
+    <div class="page1" id="p0" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p1.png?imageView/2/w/960/h/505')">
       <!-- {{ msg }} -->
       <div class="page1logo"></div>
       <div class="page1desc">
@@ -22,21 +22,21 @@
       <div class="p1common p1t3">数字版权</div>
     </div>
     <!-- page2 -->
-    <div class="page2" id="p1">
+    <div class="page2" id="p1" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p2.png?imageView/2/w/960/h/540')">
       <h2>区块链到卡一站式解决方案</h2>
       <p class="p2c">企业和组织是建立在信任的基础之上。有了信任，就会相信企业间的交易是合法的，企业生产的产品不是伪造的，企业就如显现出来的这般诚实可靠令人信赖。链卡科技将这种信任提升了一个全新的水平。我们的芯片供应链技术创造了一种前所未有的数字信任形式。</p>
       <!-- <div class="p2btn"></div> -->
       <a href="mailto:hjaks@163.com?subject=联系我们&body=欢迎您提出意见建议" class="p2btn">联系我们</a>
     </div>
     <!-- page3 -->
-    <div class="page3" id="p2">
+    <div class="page3" id="p2" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540')">
       <h2>6大应用场景</h2>
       <div class="" v-for="(sence, key) in scenes" :key="key" :class="'sence sence'+key">
         <h3>{{ sence.name }}</h3>
         <p>{{ sence.content }}</p>
       </div>
     </div>
-    <div class="page4" id="p3">
+    <div class="page4" id="p3" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/ys.png?imageView/2/w/1280/h/720')">
       <h2>链卡团队的优势</h2>
       <p>从芯片到链，代码全部开源，代码灵活度高且可控性强，根据需求定制化。</p>
       <p>行业顶级专家顾问团队，从方案到项目落地全程参与，为企业赋能，助理企业解决行业区块链从升级到应用落地遇到技术问题。</p>

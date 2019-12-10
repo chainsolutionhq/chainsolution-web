@@ -4,7 +4,7 @@
 }
 @mixin  bg($w, $h, $url) {
   @include size($w, $h);
-  background: url($url);
+  // background: url($url);
   background-size: $w $h;
 }
 @mixin pbsa($t, $l) {
@@ -163,7 +163,7 @@
       text-align: right;
       @include pbsa(3.6rem, 6.47rem);
       p {
-        @include size(1.88rem, .48rem)
+        @include size (1.88rem, .48rem)
       }
     }
   }
