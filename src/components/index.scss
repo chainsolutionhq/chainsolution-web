@@ -4,7 +4,12 @@
 }
 @mixin  bg($w, $h, $url) {
   @include size($w, $h);
-  // background: url($url);
+  background: url($url);
+  background-size: $w $h;
+}
+@mixin  nobg($w, $h, $url) {
+  @include size($w, $h);
+  background: url($url);
   background-size: $w $h;
 }
 @mixin pbsa($t, $l) {
@@ -16,7 +21,6 @@
   font-size: $font;
   color: $color;
 }
-
 .chainsolution {
   // width: 9.6rem;
   header {
@@ -57,7 +61,7 @@
     }
   }
   .page1 {
-    @include bg(9.6rem, 5.045rem, 'http://q2a6kfuu5.bkt.clouddn.com/p1.png?imageView/2/w/960/h/505');
+    @include nobg(9.6rem, 5.045rem, 'http://q2a6kfuu5.bkt.clouddn.com/p1.png?imageView/2/w/960/h/505');
     position: relative;
     .page1logo {
       @include bg(1.685rem, .41rem, '../assets/logo2.png');
@@ -91,7 +95,7 @@
     }
   }
   .page2 {
-    @include bg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/p2.png?imageView/2/w/960/h/540');
+    @include nobg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/p2.png?imageView/2/w/960/h/540');
     h2 {
       text-align: center;
       @include fontColor(.24rem, #FFF);
@@ -114,7 +118,7 @@
     }
   }
   .page3 {
-    @include bg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540');
+    @include nobg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540');
     position: relative;
     h2 {
       padding-top: .45rem;
@@ -168,7 +172,7 @@
     }
   }
   .page4 {
-    @include bg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/ys.png?imageView/2/w/960/h/540');
+    @include nobg(9.6rem, 5.4rem, 'http://q2a6kfuu5.bkt.clouddn.com/ys.png?imageView/2/w/960/h/540');
     color: #fff;
     text-align: center;
     h2 {
