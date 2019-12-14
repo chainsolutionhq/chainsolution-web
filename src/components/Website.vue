@@ -26,7 +26,7 @@
       <h2>区块链到卡一站式解决方案</h2>
       <p class="p2c">企业和组织是建立在信任的基础之上。有了信任，就会相信企业间的交易是合法的，企业生产的产品不是伪造的，企业就如显现出来的这般诚实可靠令人信赖。链卡科技将这种信任提升了一个全新的水平。我们的芯片供应链技术创造了一种前所未有的数字信任形式。</p>
       <!-- <div class="p2btn"></div> -->
-      <a href="mailto:hjaks@163.com?subject=联系我们&body=欢迎您提出意见建议" class="p2btn">联系我们</a>
+      <a href="mailto:business@chainsolution.cn?subject=联系我们&body=欢迎您提出意见建议" class="p2btn">联系我们</a>
     </div>
     <!-- page3 -->
     <div class="page3" id="p2" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540')">
@@ -45,11 +45,11 @@
       <div class="p4logo"></div>
       <div class="p4contect">
         <div class="desc"><span>帮助与支持</span><span>联系我们</span></div>
-        <div class="desc"><span>Q&A</span><span>Email:hjaks@163.com</span></div>
+        <div class="desc"><span>Q&A</span><span>Email:business@chainsolution.cn</span></div>
         <div class="line"></div>
       </div>
       <div class="p4logo2"></div>
-      <div class="copyrihts">Copyright 2019 XXXXXXX 版权所有 XXXXXX</div>
+      <div class="copyrihts">Copyright &#169; 2019 链卡科技版权所有 粤ICP备19155218号</div>
       <div class="qrcode">
         <img src="../assets/qrcode.png" alt="...">
         <p>扫码关注链卡科技了解最新动态</p>
