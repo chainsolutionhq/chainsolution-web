@@ -29,7 +29,7 @@
       <a href="mailto:hjaks@163.com?subject=联系我们&body=欢迎您提出意见建议" class="p2btn">联系我们</a>
     </div>
     <!-- page3 -->
-    <div class="page3" id="p2" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540')">
+    <div class="page3" id="p2" style="backgroundImage: url('http://q2a6kfuu5.bkt.clouddn.com/p3.png?imageView/2/w/960/h/540&ver=1')">
       <h2>6大应用场景</h2>
       <div class="" v-for="(sence, key) in scenes" :key="key" :class="'sence sence'+key">
         <h3>{{ sence.name }}</h3>
