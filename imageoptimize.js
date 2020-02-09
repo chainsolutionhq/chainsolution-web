@@ -78,7 +78,7 @@ function fileUpdate(imgpath, obj) {
     res.on('data', function(data) {
       body += data;
     });
-
+    
     res.on('end', function() {
       fs.writeFile(imgpath, body, 'binary', err => {
         if (err) return console.error(err);
